@@ -111,7 +111,6 @@ img {
 
 .main-header {
   margin-top: 40px;
-  padding-top: 40px;
 }
 
 /* Main navigation */
@@ -177,9 +176,9 @@ img {
   display: none;
 }
 
-.page-content-header {
+/* .page-content-header {
   padding: 44px 0 50px 60px;
-}
+} */
 
 /* Breadcrumbs */
 
@@ -229,9 +228,23 @@ img {
 
 /* Filter card wrapper */
 
-.inner-page .page-content-wrapper {
+/* .inner-page .page-content-wrapper {
   display: grid;
   grid-template-columns: 1fr 3fr;
+} */
+
+.inner-page .page-content {
+  display: grid;
+  grid-template-columns: 328px 1fr;
+  align-content: start;
+}
+
+.inner-page .page-content-title {
+	grid-column: 1 / -1;
+}
+
+.inner-page .breadcrumbs {
+	grid-column: 1 / -1;
 }
 
 /* Product-sorting */
@@ -425,6 +438,7 @@ img {
   font-weight: 800;
   font-size: 47px;
   line-height: 58px;
+  margin: 0;
 }
 
 .page-content th {
@@ -441,6 +455,10 @@ img {
   font-size: 36px;
   line-height: 42px;
   letter-spacing: 0.1em;
+}
+
+.page-content-description {
+  margin: 0;
 }
 
 .promo-product-button:active {
@@ -464,7 +482,8 @@ img {
 /* Category */
 
 .category {
-  padding: 76px 0 49px;
+  padding-top: 76px;
+  padding-bottom: 46px;
 }
 
 .category-list {
@@ -506,6 +525,7 @@ img {
   font-size: 47px;
   line-height: 58px;
   letter-spacing: 0.2em;
+  margin: 0;
 }
 
 .features p {
@@ -513,6 +533,7 @@ img {
   font-size: 15px;
   line-height: 28px;
   letter-spacing: 0.1em;
+  margin: 0;
 }
 
 .features-controls-list {
@@ -558,7 +579,8 @@ img {
   display: grid;
   grid-template-columns: 1fr 1fr;
   column-gap: 40px;
-  padding-bottom: 60px;
+  padding-bottom: 86px;
+  padding-top: 50px;
 }
 
 .index-column ul {
@@ -567,6 +589,8 @@ img {
   font-weight: 800;
   font-size: 16px;
   line-height: 28px;
+  margin: 0;
+  padding: 0;
 }
 
 .index-column h2 {
@@ -575,12 +599,15 @@ img {
   font-size: 47px;
   line-height: 58px;
   letter-spacing: 0.2em;
+  margin: 0;
+  padding-bottom: 50px;
 }
 
 .index-column p {
   font-weight: 300;
   font-size: 15px;
   line-height: 28px;
+  margin: 0;
 }
 
 .index-button:active {
