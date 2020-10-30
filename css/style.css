@@ -37,6 +37,10 @@
 }
 
 /* Global */
+
+.inner-page {
+  overflow-x: hidden;
+}
 body {
   min-width: 1180px;
   margin: 0;
@@ -450,18 +454,22 @@ img {
 
 .sub-menu-wrapper {
   position: absolute;
-  top: 53px;
+  top: 34px;
   left: -29px;
   z-index: 2;
   display: none;
   width: 1160px;
-  padding-top: 2px;
+  padding-top: 20px;
   padding-bottom: 50px;
   padding-left: 63px;
   background-color: #f7e296;
 }
 
 .button-sub-menu:hover + .sub-menu-wrapper {
+  display: block;
+}
+
+.sub-menu-wrapper:hover {
   display: block;
 }
 
@@ -791,8 +799,8 @@ img {
   position: absolute;
   left: -42px;
   top: -1px;
-  width: 16px;
-  height: 16px;
+  width: 24px;
+  height: 24px;
   border: 2px solid #000000;
   border-radius: 50%;
 }
@@ -800,8 +808,8 @@ img {
 .filter-radio-input:checked + .filter-radio-label::after {
   content: '';
   position: absolute;
-  top: 3px;
-  left: -38px;
+  top: 7px;
+  left: -34px;
   width: 8px;
   height: 8px;
   background-color: #000000;
@@ -1637,6 +1645,7 @@ img {
 /* Index column */
 
 .index-column {
+  position: relative;
   display: grid;
   grid-template-columns: 1fr 1fr;
   column-gap: 40px;
@@ -1708,6 +1717,43 @@ img {
   flex-direction: column;
 }
 
+.about-us::before {
+	content: "";
+    position: absolute;
+    top: 0px;
+    left: 25px;
+    width: 80px;
+    height: 7px;
+    background-color: var(--basic-black);
+}
+
+.about-us::after {
+	content: "";
+    position: absolute;
+    top: 0px;
+    right: 500px;
+    width: 80px;
+    height: 7px;
+    background-color: var(--basic-black);
+}
+
+
+.about-us li {
+  padding-left: 24px;
+  position: relative;
+}
+
+.about-us li::before {
+  content: '';
+  position: absolute;
+  background-image: url('../img/img/ellipse.svg');
+  background-repeat: no-repeat;
+  width: 8px;
+  height: 8px;
+  top: 10px;
+  left: 0;
+}
+
 .contacts {
   display: flex;
   flex-direction: column;
@@ -1728,14 +1774,8 @@ img {
   position: relative;
 }
 
-.page-footer .container:before {
-  content: '';
-  background-image: url('../img/img/Footer/logo-html.svg');
-  position: absolute;
-  width: 27px;
-  height: 34px;
-  bottom: 0;
-  right: 0;
+.footer-logo {
+	text-align: right;
 }
 
 .page-footer .container:after {
