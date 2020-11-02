@@ -25,15 +25,16 @@
         <div class="user-navigation-wrapper">
           <ul class="user-navigation">
             <li class="user-navigation-item user-navigation-item-search">
-              <form class="main-nav-search" method="" action="">
+              <form class="main-nav-search" method="get" action="https://echo.htmlacademy.ru">
                 <input
                   class="main-nav-search-input"
                   id="search"
                   type="search"
                   name="search"
-                  placeholder="Поиск по сайту"
+				  placeholder="Поиск по сайту"
+				  aria-label="Строка для поиска товара по магазину"
                 />
-                <button class="main-nav-search-btn" type="submit">Найти</button>
+                <button class="main-nav-search-btn" type="submit" aria-label="Найти товар по сайту через строку поиска">Найти</button>
                 <label class="main-nav-search-label" for="search">
                   <span class="visually-hidden">Поиск:</span>
                 </label>
